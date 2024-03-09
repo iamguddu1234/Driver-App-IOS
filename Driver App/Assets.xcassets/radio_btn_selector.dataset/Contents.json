@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "radio_btn_selector.xml",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

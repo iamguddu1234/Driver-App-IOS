@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20A4A862B9C58B600B8941D /* Driver_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4A852B9C58B600B8941D /* Driver_AppApp.swift */; };
+		B20A4A8A2B9C58B800B8941D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20A4A892B9C58B800B8941D /* Assets.xcassets */; };
+		B20A4A8D2B9C58B800B8941D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20A4A8C2B9C58B800B8941D /* Preview Assets.xcassets */; };
+		B20A4A972B9C58B800B8941D /* Driver_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4A962B9C58B800B8941D /* Driver_AppTests.swift */; };
+		B20A4AA12B9C58B800B8941D /* Driver_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AA02B9C58B800B8941D /* Driver_AppUITests.swift */; };
+		B20A4AA32B9C58B800B8941D /* Driver_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AA22B9C58B800B8941D /* Driver_AppUITestsLaunchTests.swift */; };
+		B20A4AB02B9C58CB00B8941D /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AAF2B9C58CB00B8941D /* Main.swift */; };
+		B20A4ABB2B9CA96A00B8941D /* Two.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4ABA2B9CA96900B8941D /* Two.swift */; };
+		B20A4ABD2B9CAEEF00B8941D /* Otp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4ABC2B9CAEEF00B8941D /* Otp.swift */; };
+		B20A4ABF2B9DDE3500B8941D /* Create_Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4ABE2B9DDE3500B8941D /* Create_Profile.swift */; };
+		B20A4AC12B9EB2A200B8941D /* MyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AC02B9EB2A200B8941D /* MyProfile.swift */; };
+		B20A4AC32B9EE3F000B8941D /* Myprofile2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AC22B9EE3F000B8941D /* Myprofile2.swift */; };
+		B20A4AC52B9EF12A00B8941D /* CashCollected.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AC42B9EF12A00B8941D /* CashCollected.swift */; };
+		B20A4AC72B9F007700B8941D /* AddBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AC62B9F007700B8941D /* AddBalance.swift */; };
+		B20A4AC92B9F05A300B8941D /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AC82B9F05A300B8941D /* Transfer.swift */; };
+		B20A4ACB2B9F071D00B8941D /* BillDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4ACA2B9F071D00B8941D /* BillDetails.swift */; };
+		B20A4ACD2B9F4F8F00B8941D /* AddBankDetils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4ACC2B9F4F8F00B8941D /* AddBankDetils.swift */; };
+		B20A4ACF2B9F55C300B8941D /* YourTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4ACE2B9F55C300B8941D /* YourTrip.swift */; };
+		B20A4AD12B9F5AD100B8941D /* YourTripFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AD02B9F5AD100B8941D /* YourTripFullView.swift */; };
+		B20A4AD32BA0578E00B8941D /* TransferFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AD22BA0578E00B8941D /* TransferFinal.swift */; };
+		B20A4AD52BA0640700B8941D /* YourWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AD42BA0640700B8941D /* YourWallet.swift */; };
+		B20A4AD72BA0720300B8941D /* SubmitForApproval.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AD62BA0720300B8941D /* SubmitForApproval.swift */; };
+		B20A4AD92BA0778C00B8941D /* AddVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AD82BA0778C00B8941D /* AddVehicle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B20A4A932B9C58B800B8941D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20A4A7A2B9C58B600B8941D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20A4A812B9C58B600B8941D;
+			remoteInfo = "Driver App";
+		};
+		B20A4A9D2B9C58B800B8941D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20A4A7A2B9C58B600B8941D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20A4A812B9C58B600B8941D;
+			remoteInfo = "Driver App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B20A4A822B9C58B600B8941D /* Driver App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Driver App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20A4A852B9C58B600B8941D /* Driver_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver_AppApp.swift; sourceTree = "<group>"; };
+		B20A4A892B9C58B800B8941D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20A4A8C2B9C58B800B8941D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B20A4A922B9C58B800B8941D /* Driver AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Driver AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20A4A962B9C58B800B8941D /* Driver_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver_AppTests.swift; sourceTree = "<group>"; };
+		B20A4A9C2B9C58B800B8941D /* Driver AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Driver AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20A4AA02B9C58B800B8941D /* Driver_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver_AppUITests.swift; sourceTree = "<group>"; };
+		B20A4AA22B9C58B800B8941D /* Driver_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B20A4AAF2B9C58CB00B8941D /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		B20A4AB22B9C8C9600B8941D /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Italic.ttf"; path = "../../../../../../../../../Downloads/Montserrat/static/Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		B20A4AB32B9C8CBC00B8941D /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.ttf"; path = "../../../../../../../../../Downloads/Montserrat 2/static/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		B20A4AB42B9C8CBC00B8941D /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../../../../../../../../../Downloads/Montserrat 2/static/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		B20A4AB52B9C8CBC00B8941D /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.ttf"; path = "../../../../../../../../../Downloads/Montserrat 2/static/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		B20A4AB62B9C8CBC00B8941D /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Thin.ttf"; path = "../../../../../../../../../Downloads/Montserrat 2/static/Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		B20A4AB72B9C8CBC00B8941D /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../../../../../../Downloads/Montserrat 2/static/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		B20A4AB82B9C8CBC00B8941D /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Light.ttf"; path = "../../../../../../../../../Downloads/Montserrat 2/static/Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		B20A4AB92B9C8D4B00B8941D /* Driver-AppUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Driver-AppUITests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B20A4ABA2B9CA96900B8941D /* Two.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Two.swift; sourceTree = "<group>"; };
+		B20A4ABC2B9CAEEF00B8941D /* Otp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Otp.swift; sourceTree = "<group>"; };
+		B20A4ABE2B9DDE3500B8941D /* Create_Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create_Profile.swift; sourceTree = "<group>"; };
+		B20A4AC02B9EB2A200B8941D /* MyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfile.swift; sourceTree = "<group>"; };
+		B20A4AC22B9EE3F000B8941D /* Myprofile2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myprofile2.swift; sourceTree = "<group>"; };
+		B20A4AC42B9EF12A00B8941D /* CashCollected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashCollected.swift; sourceTree = "<group>"; };
+		B20A4AC62B9F007700B8941D /* AddBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBalance.swift; sourceTree = "<group>"; };
+		B20A4AC82B9F05A300B8941D /* Transfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
+		B20A4ACA2B9F071D00B8941D /* BillDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetails.swift; sourceTree = "<group>"; };
+		B20A4ACC2B9F4F8F00B8941D /* AddBankDetils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBankDetils.swift; sourceTree = "<group>"; };
+		B20A4ACE2B9F55C300B8941D /* YourTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTrip.swift; sourceTree = "<group>"; };
+		B20A4AD02B9F5AD100B8941D /* YourTripFullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTripFullView.swift; sourceTree = "<group>"; };
+		B20A4AD22BA0578E00B8941D /* TransferFinal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFinal.swift; sourceTree = "<group>"; };
+		B20A4AD42BA0640700B8941D /* YourWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourWallet.swift; sourceTree = "<group>"; };
+		B20A4AD62BA0720300B8941D /* SubmitForApproval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitForApproval.swift; sourceTree = "<group>"; };
+		B20A4AD82BA0778C00B8941D /* AddVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20A4A7F2B9C58B600B8941D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20A4A8F2B9C58B800B8941D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20A4A992B9C58B800B8941D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20A4A792B9C58B600B8941D = {
+			isa = PBXGroup;
+			children = (
+				B20A4A842B9C58B600B8941D /* Driver App */,
+				B20A4A952B9C58B800B8941D /* Driver AppTests */,
+				B20A4A9F2B9C58B800B8941D /* Driver AppUITests */,
+				B20A4A832B9C58B600B8941D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B20A4A832B9C58B600B8941D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20A4A822B9C58B600B8941D /* Driver App.app */,
+				B20A4A922B9C58B800B8941D /* Driver AppTests.xctest */,
+				B20A4A9C2B9C58B800B8941D /* Driver AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B20A4A842B9C58B600B8941D /* Driver App */ = {
+			isa = PBXGroup;
+			children = (
+				B20A4AB12B9C8BF000B8941D /* Font */,
+				B20A4A852B9C58B600B8941D /* Driver_AppApp.swift */,
+				B20A4AC22B9EE3F000B8941D /* Myprofile2.swift */,
+				B20A4A892B9C58B800B8941D /* Assets.xcassets */,
+				B20A4A8B2B9C58B800B8941D /* Preview Content */,
+				B20A4AAF2B9C58CB00B8941D /* Main.swift */,
+				B20A4ABA2B9CA96900B8941D /* Two.swift */,
+				B20A4ABC2B9CAEEF00B8941D /* Otp.swift */,
+				B20A4ABE2B9DDE3500B8941D /* Create_Profile.swift */,
+				B20A4AC02B9EB2A200B8941D /* MyProfile.swift */,
+				B20A4AC42B9EF12A00B8941D /* CashCollected.swift */,
+				B20A4AC62B9F007700B8941D /* AddBalance.swift */,
+				B20A4AC82B9F05A300B8941D /* Transfer.swift */,
+				B20A4ACA2B9F071D00B8941D /* BillDetails.swift */,
+				B20A4ACC2B9F4F8F00B8941D /* AddBankDetils.swift */,
+				B20A4ACE2B9F55C300B8941D /* YourTrip.swift */,
+				B20A4AD02B9F5AD100B8941D /* YourTripFullView.swift */,
+				B20A4AD22BA0578E00B8941D /* TransferFinal.swift */,
+				B20A4AD42BA0640700B8941D /* YourWallet.swift */,
+				B20A4AD62BA0720300B8941D /* SubmitForApproval.swift */,
+				B20A4AD82BA0778C00B8941D /* AddVehicle.swift */,
+			);
+			path = "Driver App";
+			sourceTree = "<group>";
+		};
+		B20A4A8B2B9C58B800B8941D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B20A4A8C2B9C58B800B8941D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B20A4A952B9C58B800B8941D /* Driver AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B20A4A962B9C58B800B8941D /* Driver_AppTests.swift */,
+			);
+			path = "Driver AppTests";
+			sourceTree = "<group>";
+		};
+		B20A4A9F2B9C58B800B8941D /* Driver AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B20A4AB92B9C8D4B00B8941D /* Driver-AppUITests-Info.plist */,
+				B20A4AA02B9C58B800B8941D /* Driver_AppUITests.swift */,
+				B20A4AA22B9C58B800B8941D /* Driver_AppUITestsLaunchTests.swift */,
+			);
+			path = "Driver AppUITests";
+			sourceTree = "<group>";
+		};
+		B20A4AB12B9C8BF000B8941D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B20A4AB42B9C8CBC00B8941D /* Montserrat-Bold.ttf */,
+				B20A4AB82B9C8CBC00B8941D /* Montserrat-Light.ttf */,
+				B20A4AB32B9C8CBC00B8941D /* Montserrat-Medium.ttf */,
+				B20A4AB72B9C8CBC00B8941D /* Montserrat-Regular.ttf */,
+				B20A4AB52B9C8CBC00B8941D /* Montserrat-SemiBold.ttf */,
+				B20A4AB62B9C8CBC00B8941D /* Montserrat-Thin.ttf */,
+				B20A4AB22B9C8C9600B8941D /* Montserrat-Italic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20A4A812B9C58B600B8941D /* Driver App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20A4AA62B9C58B800B8941D /* Build configuration list for PBXNativeTarget "Driver App" */;
+			buildPhases = (
+				B20A4A7E2B9C58B600B8941D /* Sources */,
+				B20A4A7F2B9C58B600B8941D /* Frameworks */,
+				B20A4A802B9C58B600B8941D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Driver App";
+			productName = "Driver App";
+			productReference = B20A4A822B9C58B600B8941D /* Driver App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B20A4A912B9C58B800B8941D /* Driver AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20A4AA92B9C58B800B8941D /* Build configuration list for PBXNativeTarget "Driver AppTests" */;
+			buildPhases = (
+				B20A4A8E2B9C58B800B8941D /* Sources */,
+				B20A4A8F2B9C58B800B8941D /* Frameworks */,
+				B20A4A902B9C58B800B8941D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B20A4A942B9C58B800B8941D /* PBXTargetDependency */,
+			);
+			name = "Driver AppTests";
+			productName = "Driver AppTests";
+			productReference = B20A4A922B9C58B800B8941D /* Driver AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B20A4A9B2B9C58B800B8941D /* Driver AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20A4AAC2B9C58B800B8941D /* Build configuration list for PBXNativeTarget "Driver AppUITests" */;
+			buildPhases = (
+				B20A4A982B9C58B800B8941D /* Sources */,
+				B20A4A992B9C58B800B8941D /* Frameworks */,
+				B20A4A9A2B9C58B800B8941D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B20A4A9E2B9C58B800B8941D /* PBXTargetDependency */,
+			);
+			name = "Driver AppUITests";
+			productName = "Driver AppUITests";
+			productReference = B20A4A9C2B9C58B800B8941D /* Driver AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20A4A7A2B9C58B600B8941D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B20A4A812B9C58B600B8941D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					B20A4A912B9C58B800B8941D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = B20A4A812B9C58B600B8941D;
+					};
+					B20A4A9B2B9C58B800B8941D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = B20A4A812B9C58B600B8941D;
+					};
+				};
+			};
+			buildConfigurationList = B20A4A7D2B9C58B600B8941D /* Build configuration list for PBXProject "Driver App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B20A4A792B9C58B600B8941D;
+			productRefGroup = B20A4A832B9C58B600B8941D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20A4A812B9C58B600B8941D /* Driver App */,
+				B20A4A912B9C58B800B8941D /* Driver AppTests */,
+				B20A4A9B2B9C58B800B8941D /* Driver AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20A4A802B9C58B600B8941D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20A4A8D2B9C58B800B8941D /* Preview Assets.xcassets in Resources */,
+				B20A4A8A2B9C58B800B8941D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20A4A902B9C58B800B8941D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20A4A9A2B9C58B800B8941D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20A4A7E2B9C58B600B8941D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20A4ABB2B9CA96A00B8941D /* Two.swift in Sources */,
+				B20A4AC12B9EB2A200B8941D /* MyProfile.swift in Sources */,
+				B20A4AC32B9EE3F000B8941D /* Myprofile2.swift in Sources */,
+				B20A4AD52BA0640700B8941D /* YourWallet.swift in Sources */,
+				B20A4AB02B9C58CB00B8941D /* Main.swift in Sources */,
+				B20A4ACD2B9F4F8F00B8941D /* AddBankDetils.swift in Sources */,
+				B20A4AC52B9EF12A00B8941D /* CashCollected.swift in Sources */,
+				B20A4ABF2B9DDE3500B8941D /* Create_Profile.swift in Sources */,
+				B20A4AC92B9F05A300B8941D /* Transfer.swift in Sources */,
+				B20A4A862B9C58B600B8941D /* Driver_AppApp.swift in Sources */,
+				B20A4AD72BA0720300B8941D /* SubmitForApproval.swift in Sources */,
+				B20A4AD12B9F5AD100B8941D /* YourTripFullView.swift in Sources */,
+				B20A4ACB2B9F071D00B8941D /* BillDetails.swift in Sources */,
+				B20A4AD32BA0578E00B8941D /* TransferFinal.swift in Sources */,
+				B20A4ABD2B9CAEEF00B8941D /* Otp.swift in Sources */,
+				B20A4AC72B9F007700B8941D /* AddBalance.swift in Sources */,
+				B20A4AD92BA0778C00B8941D /* AddVehicle.swift in Sources */,
+				B20A4ACF2B9F55C300B8941D /* YourTrip.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20A4A8E2B9C58B800B8941D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20A4A972B9C58B800B8941D /* Driver_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20A4A982B9C58B800B8941D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20A4AA32B9C58B800B8941D /* Driver_AppUITestsLaunchTests.swift in Sources */,
+				B20A4AA12B9C58B800B8941D /* Driver_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B20A4A942B9C58B800B8941D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20A4A812B9C58B600B8941D /* Driver App */;
+			targetProxy = B20A4A932B9C58B800B8941D /* PBXContainerItemProxy */;
+		};
+		B20A4A9E2B9C58B800B8941D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20A4A812B9C58B600B8941D /* Driver App */;
+			targetProxy = B20A4A9D2B9C58B800B8941D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B20A4AA42B9C58B800B8941D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B20A4AA52B9C58B800B8941D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20A4AA72B9C58B800B8941D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Driver App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "demo.Driver-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B20A4AA82B9C58B800B8941D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Driver App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "demo.Driver-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B20A4AAA2B9C58B800B8941D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "demo.Driver-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Driver App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Driver App";
+			};
+			name = Debug;
+		};
+		B20A4AAB2B9C58B800B8941D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "demo.Driver-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Driver App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Driver App";
+			};
+			name = Release;
+		};
+		B20A4AAD2B9C58B800B8941D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Driver-AppUITests-Info.plist";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "demo.Driver-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Driver App";
+			};
+			name = Debug;
+		};
+		B20A4AAE2B9C58B800B8941D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Driver-AppUITests-Info.plist";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "demo.Driver-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Driver App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20A4A7D2B9C58B600B8941D /* Build configuration list for PBXProject "Driver App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20A4AA42B9C58B800B8941D /* Debug */,
+				B20A4AA52B9C58B800B8941D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20A4AA62B9C58B800B8941D /* Build configuration list for PBXNativeTarget "Driver App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20A4AA72B9C58B800B8941D /* Debug */,
+				B20A4AA82B9C58B800B8941D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20A4AA92B9C58B800B8941D /* Build configuration list for PBXNativeTarget "Driver AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20A4AAA2B9C58B800B8941D /* Debug */,
+				B20A4AAB2B9C58B800B8941D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20A4AAC2B9C58B800B8941D /* Build configuration list for PBXNativeTarget "Driver AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20A4AAD2B9C58B800B8941D /* Debug */,
+				B20A4AAE2B9C58B800B8941D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B20A4A7A2B9C58B600B8941D /* Project object */;
+}

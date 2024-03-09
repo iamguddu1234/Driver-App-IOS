@@ -1,0 +1,7 @@
+<!-- res/color/rating_bar_color.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Set the color for different states (normal, pressed, disabled, etc.) -->
+    <item android:color="#FF5733" android:state_pressed="true" />
+    <item android:color="#FF5733" android:state_selected="true" />
+    <item android:color="#CCCCCC" />
+</selector>

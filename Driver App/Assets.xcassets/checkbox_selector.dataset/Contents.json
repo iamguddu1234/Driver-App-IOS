@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "checkbox_selector.xml",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
