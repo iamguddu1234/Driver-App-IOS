@@ -120,7 +120,7 @@ struct RecView: View {
             Image(systemName: "checkmark.circle")
                 .resizable()
                 .foregroundColor(.green)
-                .frame(width: 25, height: 25)
+                .frame(width: 26, height: 26)
                 .padding(.leading)
             
             
