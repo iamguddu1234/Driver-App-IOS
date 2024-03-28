@@ -12,24 +12,27 @@ struct Myprofile2: View {
 
     
     var body: some View {
-        ZStack {
-            VStack{
-                
-                Spacer()
-                UserProfileImage()
-                    .padding()
-                
-                
-                TextFieldView()
-                
-                Spacer()
-                
-                Spacer()
-                ButtonNew()
+        NavigationView{
+            
+            
+            ZStack {
+                VStack{
+                    TopBarProfile()
+                    Spacer()
+                    UserProfileImage()
+                        .padding()
+                    
+                    
+                    TextFieldView()
+                    
+                    Spacer()
+                    
+                    Spacer()
+                    ButtonNew()
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        
     }
     
     }
@@ -65,9 +68,9 @@ struct ButtonNew: View {
     var body: some View {
         Text("Submit")
             .textCase(.uppercase)
-            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 44)
-            .background(.blue)
+            .fontWeight(.semibold)
+            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 45)
+            .background(.orange)
             .foregroundColor(.white)
             .cornerRadius(6)
         
@@ -100,10 +103,14 @@ struct TextFieldView: View {
                     .padding(.horizontal, 2)
                 
             }
+            .frame(maxWidth: .infinity, maxHeight: 45)
             .background(
                 RoundedRectangle(cornerRadius: 6)
-                    .stroke(Color.gray.opacity(0.5), lineWidth: 1)
+                    .stroke(Color.gray.opacity(0.3), lineWidth: 1)
             )
+            .background(.white)
+            .cornerRadius(6)
+            .multilineTextAlignment(.leading)
             .padding(.bottom, 6)
             
             
@@ -125,10 +132,14 @@ struct TextFieldView: View {
                     .padding(.horizontal, 2)
                 
             }
+            .frame(maxWidth: .infinity, maxHeight: 45)
             .background(
                 RoundedRectangle(cornerRadius: 6)
                     .stroke(Color.gray.opacity(0.5), lineWidth: 1)
             )
+            .background(.white)
+            .cornerRadius(6)
+            .multilineTextAlignment(.leading)
             .padding(.bottom,6)
             
             
@@ -148,15 +159,60 @@ struct TextFieldView: View {
                     .padding(.horizontal, 2)
                 
             }
+            .frame(maxWidth: .infinity, maxHeight: 45)
             .background(
                 RoundedRectangle(cornerRadius: 6)
                     .stroke(Color.gray.opacity(0.5), lineWidth: 1)
             )
+            .background(.white)
+            .cornerRadius(6)
+            .multilineTextAlignment(.leading)
             
             
             
             
         }
         .padding()
+    }
+}
+
+struct TopBarProfile: View {
+    var body: some View {
+        
+ 
+            
+            
+            HStack{
+                
+                NavigationLink(destination: MyProfile().navigationBarBackButtonHidden(true)) {
+                    Image(systemName: "arrow.backward")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20, height: 20)
+                        .foregroundColor(.black)
+                }
+                
+                Text("My Profile")
+                    .font(.system(size: 20))
+                    .fontWeight(.semibold)
+                    .foregroundColor(.black)
+                    .padding(.horizontal, 20)
+                Spacer()
+                
+//                
+//                NavigationLink(destination: Myprofile2().navigationBarBackButtonHidden(true)) {
+//                    Image(systemName: "square.and.pencil")
+//                        .resizable()
+//                        .frame(width: 20, height: 20)
+//                }
+//                
+                
+            }
+            .padding(.horizontal, 30)
+            .padding(.vertical)
+            .background(.white)
+            .shadow(color: Color.black.opacity(0.08), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/ ,x: 0.0,y:10)
+            
+        
     }
 }

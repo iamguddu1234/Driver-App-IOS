@@ -9,18 +9,45 @@ import SwiftUI
 
 struct MyProfile: View {
     var body: some View {
+        
+        NavigationView{
+            
+        
         VStack{
             
             TopBar()
             
             Spacer()
+            Image("user")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 100, height: 100)
+                .clipShape(Circle())
+                .overlay(
+                    Circle()
+                        .stroke(Color.white, lineWidth: 4) // Adjust border color and width
+                )
+                .padding(.vertical)
             
-            profileView()
+            
+            Text("Gaurau Tiwari")
+                .font(.system(size: 20))
+                .fontWeight(.regular)
+            
+            
+            Text("gaurautiwaei@gmail.com")
+                .font(.system(size: 16))
+                .fontWeight(.regular)
+                .foregroundColor(.gray)
+                .colorMultiply(.gray.opacity(0.7))
+                .accentColor(.gray)
             Spacer()
             
             
-           detailContainer()
+            detailContainer()
             Spacer()
+            
+        }
             
             
         }
@@ -34,29 +61,44 @@ struct MyProfile: View {
 
 struct TopBar: View {
     var body: some View {
-        HStack{
-            
-            Image(systemName: "arrow.backward")
-                .resizable()
-                .frame(width: 20, height: 20)
-            
-            Text("My Profile")
-                .font(.system(size: 20))
-                .foregroundColor(.black)
-                .padding(.horizontal, 20)
-            Spacer()
+        
+ 
             
             
-            Image(systemName: "square.and.pencil")
-                .resizable()
-                .frame(width: 20, height: 20)
+            HStack{
+                
+                NavigationLink(destination: HomePageView().navigationBarBackButtonHidden(true)) {
+                    Image(systemName: "arrow.backward")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20, height: 20)
+                        .foregroundColor(.black)
+                }
+                
+                Text("My Profile")
+                    .font(.system(size: 20))
+                    .foregroundColor(.black)
+                    .padding(.horizontal, 20)
+                    .fontWeight(.semibold)
+                Spacer()
+                
+                
+                NavigationLink(destination: Myprofile2().navigationBarBackButtonHidden(true)) {
+                    Image(systemName: "square.and.pencil")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .foregroundColor(.black)
+
+                }
+                
+                
+            }
+            .padding(.horizontal, 30)
+            .padding(.vertical)
+            .background(.white)
+            .shadow(color: Color.black.opacity(0.08), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/ ,x: 0.0,y:10)
             
-            
-        }
-        .padding(.horizontal, 30)
-        .padding(.bottom, 30)
-        .background(.white)
-        .shadow(color: Color.black.opacity(0.08), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/ ,x: 0.0,y:10)
+        
     }
 }
 
@@ -78,12 +120,12 @@ struct profileView: View {
             
             Text("Gaurau Tiwari")
                 .font(.system(size: 20))
-                .foregroundColor(.black)
+                .fontWeight(.regular)
             
             
             Text("gaurautiwaei@gmail.com")
                 .font(.system(size: 16))
-                .foregroundColor(.gray)
+                .fontWeight(.regular)
         }
     }
 }
@@ -97,7 +139,7 @@ struct detailContainer: View {
             HStack(alignment: .top, spacing: 10){
                 Image(systemName: "person.crop.circle.fill")
                     .resizable()
-                    .foregroundColor(.gray)
+                    .foregroundColor(.orange)
                     .frame(width: 20, height: 20)
                 
                 VStack(alignment: .leading){
@@ -118,9 +160,10 @@ struct detailContainer: View {
             
             
             HStack(alignment: .top, spacing: 10){
-                Image("mobile")
+                Image(systemName: "iphone")
                     .resizable()
                     .scaledToFit()
+                    .foregroundColor(.orange)
                     .frame(width: 20, height: 20)
                 
                 VStack(alignment: .leading){
@@ -144,7 +187,7 @@ struct detailContainer: View {
                 Image(systemName: "envelope.fill")
                     .resizable()
                     .scaledToFit()
-                    .foregroundColor(.gray)
+                    .foregroundColor(.orange)
                     .frame(width: 20, height: 20)
                 
                 VStack(alignment: .leading){
@@ -156,8 +199,12 @@ struct detailContainer: View {
                     
                     
                     Text("AkshayBhasme@gmail.com")
+                        .foregroundColor(.black)
                         .font(.system(size: 16))
-                        .foregroundColor(.red)
+                        .fontWeight(.regular)
+                        .foregroundColor(.gray)
+                        .colorMultiply(.black)
+                        .accentColor(.gray)
                     
                     
                 }

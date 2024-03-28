@@ -9,37 +9,47 @@ import SwiftUI
 
 struct TransferFinal: View {
     var body: some View {
-        VStack{
+        
+        NavigationView{
             
-            AmountDetails()
-            
-            HStack{
-                Text("Deposit to")
+            VStack{
+                
+                TopBar3()
+                
+                AmountDetails()
+                
+                HStack{
+                    Text("Deposit to")
+                    
+                    Spacer()
+                    
+                    NavigationLink(destination: AddBankDetils().navigationBarBackButtonHidden(true)) {
+                        
+                        Text("Add Bank Detail")
+                            .foregroundColor(.orange)
+                            .fontWeight(.regular)
+                    }
+                }
+                .padding()
+                
+                
+                BankView()
+                    .padding()
+                Divider()
                 
                 Spacer()
                 
-                Text("Add Bank Detail")
-                    .foregroundColor(.blue)
-                    .fontWeight(.regular)
-            }
-            .padding()
-            
-            
-            BankView()
-                .padding()
-            Divider()
-            
-            Spacer()
-            
-            VStack {
-                BottomGroupView()
-                   
-            }
-            
-
-
+                VStack {
+                    BottomGroupView()
+                       
+                }
                 
+
+
+                    
+            }
         }
+       
         
         
        
@@ -62,7 +72,7 @@ struct   AmountDetails: View {
             Text("₹1860.00")
                 .font(.system(size: 26))
                 .fontWeight(.semibold)
-                .foregroundColor(.blue)
+                .foregroundColor(.orange)
             
         }
         .padding(.vertical,20)
@@ -80,7 +90,7 @@ struct BankView: View {
         HStack(alignment: .top, spacing: 10) {
             
             Circle()
-                .fill(Color.blue) // Inner circle color
+                .fill(Color.orange) // Inner circle color
                 .padding(4)
                 .overlay(
                     Circle()
@@ -192,11 +202,11 @@ struct BottomGroupView: View {
             .padding(.vertical)
             
             
-            Text("TRANSFER")
+            Text("CONFIRM")
                 .textCase(.uppercase)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 44)
-                .background(.blue)
+                .fontWeight(.semibold)
+                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 45)
+                .background(.orange)
                 .foregroundColor(.white)
                 .cornerRadius(6.0)
             
@@ -210,3 +220,42 @@ struct BottomGroupView: View {
 
     }
 }
+
+struct TopBar3: View {
+    var body: some View {
+        HStack(alignment: .center){
+            
+            NavigationLink(destination: Transfer().navigationBarBackButtonHidden(true)) {
+                
+                Image(systemName: "arrow.backward")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 18, height: 18)
+                    .foregroundColor(.black)
+                
+            }
+            
+            Text("Transfer")
+                .font(.system(size: 18))
+                .fontWeight(.bold)
+                .foregroundColor(.black)
+                .padding(.horizontal, 10)
+            Spacer()
+            
+            
+            Image(systemName: "beats.headphones")
+                .resizable()
+                .frame(width: 16, height: 16)
+            Text("Help")
+                .font(.system(size: 15))
+                .foregroundColor(.black)
+            
+            
+        }
+        .padding(.horizontal, 30)
+        .padding(.vertical)
+        .background(.white)
+        .shadow(color: Color.gray.opacity(0.09), radius: 1 ,x: 0.0,y:3)
+    }
+}
+

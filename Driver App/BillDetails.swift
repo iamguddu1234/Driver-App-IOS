@@ -9,23 +9,40 @@ import SwiftUI
 
 struct BillDetails: View {
     var body: some View {
-        VStack {
+        
+        
+        NavigationView{
             
-            TopViewHere()
-            Tuff()
-                .padding()
-            
-            BillDemo()
-            Spacer()
-            Spacer()
-            
-            BottomMenu()
-            
-            
-            
+            VStack{
+                
+                
+                
+                BillTopbar()
+                
+                ScrollView {
+                    VStack {
+                        
+                        TopViewHere()
+                        Tuff()
+                            .padding(.horizontal)
+                        
+                        BillDemo()
+                        
+                        BottomMenu()
+                        
+                        
+                        
+                    }
+                }
+                
+            }
         }
+        
     }
 }
+
+
+
 
 #Preview {
     BillDetails()
@@ -127,7 +144,7 @@ struct Tuff: View {
         .padding(.top)
         
         .frame(maxWidth: .infinity)
-        .background(.gray.opacity(0.2))
+        .background(.gray.opacity(0.1))
         .cornerRadius(10)
     }
 }
@@ -145,7 +162,7 @@ struct TopViewHere: View {
                 
                 
                 
-                VStack(alignment: .leading){
+                VStack(alignment: .leading, spacing: 10){
                     
                     Text("Akshay Bhasme")
                         .font(.system(size: 20))
@@ -199,7 +216,7 @@ struct TopViewHere: View {
                             .fontWeight(.regular)
                         
                     }
-                    .padding(.vertical)
+                    .padding(.vertical, 10)
                     Divider()
                 }
                 
@@ -242,21 +259,21 @@ struct BillDemo: View {
         VStack(alignment :.leading){
             
             Text("Bill details")
-                .font(.system(size: 20))
+                .font(.system(size: 18))
                 .fontWeight(.semibold)
                 .foregroundColor(.black)
             
             
             HStack{
                 Text("Your Trip")
-                    .font(.system(size: 20))
+                    .font(.system(size: 18))
                     .fontWeight(.thin)
                     .foregroundColor(.black)
                 
                 Spacer()
                 
                 Text("$123")
-                    .font(.system(size: 20))
+                    .font(.system(size: 18))
                     .fontWeight(.regular)
                     .foregroundColor(.black)
                 
@@ -266,31 +283,31 @@ struct BillDemo: View {
             
             HStack{
                 Text("Rounded Off")
-                    .font(.system(size: 20))
+                    .font(.system(size: 18))
                     .fontWeight(.thin)
                     .foregroundColor(.black)
                 
                 Spacer()
                 
                 Text("$123")
-                    .font(.system(size: 20))
+                    .font(.system(size: 18))
                     .fontWeight(.regular)
                     .foregroundColor(.black)
                 
             }
-            .padding(.vertical,4)
+            .padding(.vertical,2)
             
             
             HStack{
                 Text("Total Bill")
-                    .font(.system(size: 20))
+                    .font(.system(size: 18))
                     .fontWeight(.thin)
                     .foregroundColor(.black)
                 
                 Spacer()
                 
                 Text("$123")
-                    .font(.system(size: 20))
+                    .font(.system(size: 18))
                     .fontWeight(.regular)
                     .foregroundColor(.black)
                 
@@ -299,14 +316,14 @@ struct BillDemo: View {
             
             HStack{
                 Text("Total Payable")
-                    .font(.system(size: 20))
+                    .font(.system(size: 18))
                     .fontWeight(.semibold)
                     .foregroundColor(.black)
                 
                 Spacer()
                 
                 Text("$123")
-                    .font(.system(size: 20))
+                    .font(.system(size: 18))
                     .fontWeight(.bold)
                     .foregroundColor(.black)
                 
@@ -384,5 +401,53 @@ BottomMenu: View {
             .cornerRadius(10)
         }
         .padding()
+    }
+}
+
+
+
+struct BillTopbar: View {
+    var body: some View {
+        HStack(alignment: .center, spacing: 20){
+            
+            
+            NavigationLink(destination: HomePageView().navigationBarBackButtonHidden(true)){
+                
+                Image(systemName: "arrow.backward")
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundColor(.black)
+                    .frame(width: 20, height: 20)
+            }
+            
+            VStack(alignment: .leading){
+                
+                
+                
+                Text("Wed, Aug 27, 04:17 PM")
+                    .font(.system(size: 20))
+                    .fontWeight(.semibold)
+                    .foregroundColor(.black)
+                    .padding(.bottom, 1)
+                
+                Text("CRN123876298")
+                    .font(.system(size: 12))
+                    .fontWeight(.light)
+                    .foregroundColor(.black)
+                
+            }
+            Spacer()
+            
+            
+//            Image(systemName: "line.3.horizontal.decrease.circle")
+//                .resizable()
+//                .frame(width: 20, height: 20)
+//            
+            
+        }
+        .padding(.horizontal)
+        .padding(.vertical)
+        .background(.white)
+        .shadow(color: Color.black.opacity(0.06), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/ ,x: 0.0,y:5)
     }
 }

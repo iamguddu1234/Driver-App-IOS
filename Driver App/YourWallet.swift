@@ -9,44 +9,52 @@ import SwiftUI
 
 struct YourWallet: View {
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading){
-                
-                
-                VStack{
-                    
-                    MainTopView()
-                    
-                }
-                .background(.blue.opacity(0.2))
-                .frame(maxWidth: .infinity)
-                .cornerRadius(10)
-                .padding()
-
-                
-                LearnMoreView()
-                HisView()
-                
-                
-                Text("12 Mar 2022")
-                    .font(.system(size: 18))
-                    .fontWeight(.medium)
-                    .foregroundColor(.gray)
-                    .padding()
-
-                
-                
-                RecView()
-                RecView()
-                RecView()
+        NavigationView{
             
+            VStack {
                 
-                
-                
-                
-                
+                WalletHeaderView()
+                ScrollView {
+                    VStack(alignment: .leading){
+                        
+                        
+                        VStack{
+                            
+                            MainTopView()
+                            
+                        }
+                        .background(.orange.opacity(0.1))
+                        .frame(maxWidth: .infinity)
+                        .cornerRadius(10)
+                        .padding()
+
+                        
+                        LearnMoreView()
+                        HisView()
+                        
+                        
+                        Text("12 Mar 2022")
+                            .font(.system(size: 18))
+                            .fontWeight(.medium)
+                            .foregroundColor(.gray)
+                            .padding()
+
+                        
+                        
+                        RecView()
+                        RecView()
+                        RecView()
+                    
+                        
+                        
+                        
+                        
+                        
+                    }
+                }
             }
         }
+        
     }
 }
 
@@ -68,7 +76,7 @@ struct LearnMoreView: View {
             Text("Learn More")
                 .font(.system(size: 18))
                 .fontWeight(.bold)
-                .foregroundColor(.blue)
+                .foregroundColor(.orange)
             
             
             
@@ -184,7 +192,7 @@ struct MainTopView: View {
                 Text("₹1860.00")
                     .font(.system(size: 18))
                     .fontWeight(.medium)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.orange)
                     .padding()
                 
             }
@@ -195,7 +203,7 @@ struct MainTopView: View {
                 HStack{
                     
                     Circle()
-                        .fill(Color.blue) // Inner circle color
+                        .fill(Color.orange) // Inner circle color
                         .padding(4)
                         .overlay(
                             Circle()
@@ -241,7 +249,7 @@ struct MainTopView: View {
             
             
             Divider()
-                .background(Color.blue)
+                .background(Color.orange)
             
             
             HStack(alignment: .top){
@@ -268,13 +276,13 @@ struct MainTopView: View {
                 Text("View Detail →")
                     .font(.system(size: 18))
                     .fontWeight(.light)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.orange)
                 
             }
             .padding()
             
             Divider()
-                .background(Color.blue)
+                .background(Color.orange)
 
             
             
@@ -294,31 +302,37 @@ struct MainTopView: View {
                         .foregroundColor(.black)
                         .padding(.top, 2)
                     
-                    Text("Transfer")
-                        .font(.system(size: 18))
-                        .fontWeight(.regular)
-                        .foregroundColor(.blue)
-                        .padding(.top, 2)
+                    NavigationLink(destination: Transfer().navigationBarBackButtonHidden(true)) {
+                        
+                        Text("Transfer")
+                            .font(.system(size: 18))
+                            .fontWeight(.regular)
+                            .foregroundColor(.orange)
+                            .padding(.top, 2)
+                    }
                     
                 }
                 
                 
                 Spacer()
                 
-                
-                Text("Add Balance")
-                    .font(.system(size: 16))
-                    .fontWeight(.light)
-                    .foregroundColor(.blue)
-                    .cornerRadius(4)
-                    .padding(6)
-                    .background(
-                        RoundedRectangle(cornerRadius: 4)
-                            .stroke(Color.blue, lineWidth: 1)
-                        
-                        
-                        
-                    )
+                NavigationLink(destination: AddBalance().navigationBarBackButtonHidden(true)) {
+                    
+                    Text("Add Balance")
+                        .font(.system(size: 16))
+                        .fontWeight(.light)
+                        .foregroundColor(.orange)
+                        .cornerRadius(4)
+                        .padding(6)
+                        .background(
+                            RoundedRectangle(cornerRadius: 4)
+                                .stroke(Color.orange, lineWidth: 1)
+                            
+                            
+                            
+                            
+                        )
+                }
                 
                 
                 
@@ -329,3 +343,42 @@ struct MainTopView: View {
         }
     }
 }
+
+struct WalletHeaderView: View {
+    var body: some View {
+        HStack(alignment: .center){
+            
+            NavigationLink(destination: HomePageView().navigationBarBackButtonHidden(true)) {
+                
+                Image(systemName: "arrow.backward")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 18, height: 18)
+                    .foregroundColor(.black)
+                
+            }
+            
+            Text("Your Wallet")
+                .font(.system(size: 18))
+                .fontWeight(.bold)
+                .foregroundColor(.black)
+                .padding(.horizontal, 10)
+            Spacer()
+            
+            
+            Image(systemName: "beats.headphones")
+                .resizable()
+                .frame(width: 16, height: 16)
+            Text("Help")
+                .font(.system(size: 15))
+                .foregroundColor(.black)
+            
+            
+        }
+        .padding(.horizontal, 30)
+        .padding(.vertical)
+        .background(.white)
+        .shadow(color: Color.gray.opacity(0.09), radius: 1 ,x: 0.0,y:3)
+    }
+}
+

@@ -129,9 +129,9 @@ struct AddVehicle: View {
                 
                 Text("SAVE")
                     .textCase(.uppercase)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .fontWeight(.semibold)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 50)
-                    .background(.blue)
+                    .background(.orange)
                     .foregroundColor(.white)
                     .cornerRadius(6)
                 
@@ -140,6 +140,7 @@ struct AddVehicle: View {
             }
             
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 

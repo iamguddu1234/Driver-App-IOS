@@ -12,70 +12,84 @@ struct Transfer: View {
     @State private var number = ""
     
     var body: some View {
-        VStack{
+        
+        
+        NavigationView{
             
             
-            
-            TopBar2()
-              
-            
-            Image("cash")
-                .resizable()
-                .scaledToFit()
-            
-            
-            Text("Lorem ipsum dolor sote amet  dummy laanguage paragraph for add balance instruction ")
-                .multilineTextAlignment(.center)
-                .font(.system(size: 18))
-                .fontWeight(.regular)
-                .foregroundColor(.gray.opacity(0.9))
-                .padding(.horizontal)
-                .padding(.bottom)
-            
-            
-            HStack(spacing: 10){
-                Image(systemName: "banknote.fill")
+            VStack{
+                
+                
+                
+                TopBar2()
+                
+                
+                Image("cash")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 20, height: 20)
-                    .foregroundColor(.gray)
-                    .padding(.leading)
                 
                 
+                Text("Lorem ipsum dolor sote amet  dummy laanguage paragraph for add balance instruction ")
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: 18))
+                    .fontWeight(.regular)
+                    .foregroundColor(.gray.opacity(0.9))
+                    .padding(.horizontal)
+                    .padding(.bottom)
                 
-                TextField("Enter Amount", text: $number)
-                    .padding(.vertical,14)
-                    .padding(.horizontal, 2)
+                
+                HStack(spacing: 10){
+                    Image(systemName: "banknote.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20, height: 20)
+                        .foregroundColor(.gray)
+                        .padding(.leading)
+                    
+                    
+                    
+                    TextField("Enter Amount", text: $number)
+                        .padding(.vertical,14)
+                        .padding(.horizontal, 2)
+                    
+                }
+                .frame(maxWidth: .infinity, maxHeight: 45)
+                .background(
+                    RoundedRectangle(cornerRadius: 6)
+                        .stroke(Color.gray.opacity(0.5), lineWidth: 1)
+                )
+                .background(.white)
+                .cornerRadius(6)
+                .padding(.bottom, 6)
+                .padding(.horizontal)
+                .padding(.top)
+                
+                
+                Spacer()
+                Spacer()
+                
+                
+                NavigationLink(destination: TransferFinal().navigationBarBackButtonHidden(true)) {
+                    
+                    Text("Transfer")
+                        .textCase(.uppercase)
+                        .fontWeight(.semibold)
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 45)
+                        .background(.orange)
+                        .foregroundColor(.white)
+                        .cornerRadius(6)
+                    
+                        .padding(.vertical, 30)
+                        .padding(.horizontal)
+                    
+                }
+                
+                
                 
             }
-            .background(
-                RoundedRectangle(cornerRadius: 6)
-                    .stroke(Color.gray.opacity(0.5), lineWidth: 1)
-            )
-            .padding(.bottom, 6)
-            .padding(.horizontal)
-            .padding(.top)
-            
-            
-            Spacer()
-            Spacer()
-            
-            
-            Text("Transfer")
-                .textCase(.uppercase)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 44)
-                .background(.blue)
-                .foregroundColor(.white)
-                .cornerRadius(6)
-            
-                .padding(.vertical, 30)
-                .padding(.horizontal)
-             
-            
+            .background(.white)
             
         }
-        .background(.white)
     }
 }
 
@@ -88,10 +102,15 @@ struct TopBar2: View {
     var body: some View {
         HStack(alignment: .center){
             
-            Image(systemName: "arrow.backward")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 18, height: 18)
+            NavigationLink(destination: YourWallet().navigationBarBackButtonHidden(true)) {
+                
+                Image(systemName: "arrow.backward")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 18, height: 18)
+                    .foregroundColor(.black)
+                
+            }
             
             Text("Transfer")
                 .font(.system(size: 18))

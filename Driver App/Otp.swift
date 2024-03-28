@@ -17,25 +17,27 @@ struct Otp: View {
  
         
         
-        VStack{
-            
-            Image("otp")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(maxWidth: 250, maxHeight: 250)
-            
-            Spacer()
-            
-            
-         
-                ExtractedView()
-                    
-       
-               
+        NavigationView {
+            VStack{
+                
+                Image("otp")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: 250, maxHeight: 250)
+                
+                Spacer()
+                
+                
+             
+                    ExtractedView()
+                        
+           
+                   
 
 
-            }
-        .frame(maxWidth: .infinity)
+                }
+            .frame(maxWidth: .infinity)
+        }
             
         }
      
@@ -81,10 +83,19 @@ struct ExtractedView: View {
                     .background(Color.white)
                     .overlay(
                         RoundedRectangle(cornerRadius: 4)
-                            .stroke(Color.gray.opacity(08), lineWidth: 1)
+                            .stroke(Color.gray.opacity(0.5), lineWidth: 1)
                     )
                 
-                TextField("", text: $OTP1)
+                    .onChange(of: OTP1) { newValue in
+                                // Check if the length of the input is more than 1
+                                if newValue.count > 1 {
+                                    // If more than 1 character, take only the first character
+                                    OTP1 = String(newValue.prefix(1))
+                                }
+                            }
+                
+                
+                TextField("", text: $OTP2)
                     .multilineTextAlignment(.center)
                     .font(.title3)
                     .padding()
@@ -92,10 +103,19 @@ struct ExtractedView: View {
                     .background(Color.white)
                     .overlay(
                         RoundedRectangle(cornerRadius: 4)
-                            .stroke(Color.gray.opacity(08), lineWidth: 1)
+                            .stroke(Color.gray.opacity(0.5), lineWidth: 1)
                     )
+                    .onChange(of: OTP2) { newValue in
+                                // Check if the length of the input is more than 1
+                                if newValue.count > 1 {
+                                    // If more than 1 character, take only the first character
+                                    OTP2 = String(newValue.prefix(1))
+                                }
+                            }
                 
-                TextField("", text: $OTP1)
+                
+                
+                TextField("", text: $OTP3)
                     .multilineTextAlignment(.center)
                     .font(.title3)
                     .padding()
@@ -103,18 +123,35 @@ struct ExtractedView: View {
                     .background(Color.white)
                     .overlay(
                         RoundedRectangle(cornerRadius: 4)
-                            .stroke(Color.gray.opacity(08), lineWidth: 1)
+                            .stroke(Color.gray.opacity(0.5), lineWidth: 1)
                     )
+                    .onChange(of: OTP3) { newValue in
+                                // Check if the length of the input is more than 1
+                                if newValue.count > 1 {
+                                    // If more than 1 character, take only the first character
+                                    OTP3 = String(newValue.prefix(1))
+                                }
+                            }
                 
-                TextField("", text: $OTP1)
+                
+                TextField("", text: $OTP4)
                     .multilineTextAlignment(.center)
                     .font(.title3)
                     .frame(maxWidth: 40, maxHeight: 40)
                     .background(Color.white)
                     .overlay(
                         RoundedRectangle(cornerRadius: 4)
-                            .stroke(Color.gray.opacity(08), lineWidth: 1)
+                            .stroke(Color.gray.opacity(0.5), lineWidth: 1)
                     )
+                
+                    .onChange(of: OTP4) { newValue in
+                                // Check if the length of the input is more than 1
+                                if newValue.count > 1 {
+                                    // If more than 1 character, take only the first character
+                                    OTP4 = String(newValue.prefix(1))
+                                }
+                            }
+                
                 
                 Spacer()
                 
@@ -126,34 +163,38 @@ struct ExtractedView: View {
             
             Text("30 Sec")
                 .font(.system(size: 18))
-                .foregroundColor(.gray)
+                .fontWeight(.light)
+                .foregroundColor(.black.opacity(0.6))
                 .padding(.vertical, 20)
             
             
             HStack {
                 Text("Don’t get the OTP")
                     .font(.system(size: 18))
-                .foregroundColor(.black)
+                    .foregroundColor(.black.opacity(0.7))
+                    .fontWeight(.light)
                 
                 
                 
                 Text("Resend")
                     .font(.system(size: 18))
-                .foregroundColor(.blue)
+                    .foregroundColor(.orange)
+                    .fontWeight(.medium)
                 
                 
             }
             
             
             Spacer()
-            
-            Text("VERIFY")
-                .textCase(.uppercase)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 44)
-                .background(.blue)
-                .foregroundColor(.white)
-                .cornerRadius(6)
+            NavigationLink(destination: Create_Profile().navigationBarBackButtonHidden(true)) {
+                Text("Submit")
+                    .textCase(.uppercase)
+                    .fontWeight(.semibold)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 45)
+                    .background(.orange)
+                    .foregroundColor(.white)
+                    .cornerRadius(6)
+            }
             
          
          
@@ -165,13 +206,15 @@ struct ExtractedView: View {
         HStack(alignment : .center) {
             Text("Already Register?")
                 .font(.system(size: 18))
-            .foregroundColor(.black)
+                .foregroundColor(.black.opacity(0.7))
+                .fontWeight(.light)
             
             
             
             Text("Login")
                 .font(.system(size: 18))
-            .foregroundColor(.blue)
+                .foregroundColor(.orange)
+                .fontWeight(.medium)
             
             
         }

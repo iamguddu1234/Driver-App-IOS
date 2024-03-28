@@ -9,57 +9,118 @@ import SwiftUI
 
 struct Create_Profile: View {
     
-
+    @State private var number = ""
+    @State private var isSheetPresented = false
+    
+    
     var body: some View {
-        ZStack{
-            
-            
-       
-                    Image("map")
-                        .resizable()
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .opacity(0.4)
+        
+        NavigationView {
+            ZStack{
+                Image("map")
+                    .resizable()
+                    .overlay(LinearGradient(colors: [Color.white.opacity(0.6),
+                                                     Color.orange.opacity(0.3)], startPoint: .topLeading, endPoint: .bottomLeading))
                 
-            
-            
-            VStack{
+                    .ignoresSafeArea()
                 
-                avatar()
                 
-                VStack {
+                
+                
+                
+                VStack(alignment: .leading){
+                    
+                    
+                    
+                    VStack(alignment: .leading){
+                        NavigationLink(destination: Otp().navigationBarBackButtonHidden(true)) {
+                            Image(systemName: "arrow.left")
+                                .resizable()
+                                .scaledToFit()
+                                .foregroundColor(.black)
+                                .frame(width: 24, height: 24)
+                                .padding(.bottom)
+                        }
+                        
+                        Text("Create Profile")
+                            .font(.system(size: 25))
+                            .fontWeight(.bold)
+                            .foregroundColor(.black)
+                    }
+                    .padding()
+                    
+                    
+                    Spacer()
+                    Spacer()
+                    VStack(alignment: .center) {
+                        avatar()
+                    }
+                    .frame(maxWidth: .infinity)
+                    
+                    
                     EnterDetails()
-                    IVIew()
-        
-                       
                     
-                    Text("VERIFY")
-                        .textCase(.uppercase)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 44)
-                        .background(.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(6)
                     
-                        .padding(.vertical, 30)
-                        .padding()
+                    
+                    SelectbankView(text: "Select your State")
+                        .frame(width: .infinity, height: 50)
+                        .padding(.bottom, 8)
+                    
+                    
+                    SelectbankView(text: "Select your City")
+                        .frame(width: .infinity, height: 50)
+                        .padding(.bottom, 8)
+                    
+                    
+                    HStack(spacing: 10){
+                        Image(systemName: "banknote.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(.gray)
+                        //                            .padding(.leading)
+                            .hidden()
+                        
+                        
+                        
+                        TextField("Enter your Referral Code", text: $number)
+                            .padding(.vertical,14)
+                        //                            .padding(.horizontal, 2)
+                        
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: 45)
+                    .background(
+                        RoundedRectangle(cornerRadius: 6)
+                            .stroke(Color.gray.opacity(0.5), lineWidth: 1)
+                    )
+                    .background(.white)
+                    .cornerRadius(6)
+                    .multilineTextAlignment(.leading)
+                    .padding(.bottom, 8)
+                    .padding(.horizontal)
+                    
+                    
+                    Spacer()
+                    
+                    VerifyBtnView()
                 }
-                .background(.white)
+                .background(.white.opacity(0.7))
                 
                 
-        
-            
-           
+                
+                
+                
             }
-            
-  
-            
-           
-            
-            
-           
         }
-        .edgesIgnoringSafeArea(.all)
-
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
 }
@@ -86,101 +147,113 @@ struct avatar: View {
             }
             .shadow(radius: 0.5)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
 struct EnterDetails: View {
     
     @State private var number = ""
-
+    
     
     var body: some View {
         VStack(spacing: 10) {
             VStack{
                 
                 HStack(spacing: 10){
-                    Image("mobile")
+                    Image(systemName: "person.fill")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 20, height: 20)
-                        .foregroundColor(.black)
-                        .padding(.horizontal, 10)
-                    
-                    TextField("Enter Mobile Number", text: $number)
-                        .frame(width: .infinity)
+                        .foregroundColor(.gray)
+                        .padding(.leading)
                     
                     
                     
+                    TextField("Enter User Name", text: $number)
+                        .padding(.vertical,14)
+                        .padding(.horizontal, 2)
                     
                 }
-                .frame(height: 40)
-                .background(Color.white)
-                .border(Color.gray, width: 1)
+                .frame(maxWidth: .infinity, maxHeight: 45)
+                .background(
+                    RoundedRectangle(cornerRadius: 6)
+                        .stroke(Color.gray.opacity(0.5), lineWidth: 1)
+                )
+                .background(.white)
+                .cornerRadius(6)
+                .multilineTextAlignment(.leading)
+                .padding(.horizontal)
+                .padding(.top, 20)
+                .padding(.bottom, 8)
+                
                 
             }
             
-            VStack{
+            HStack(spacing: 10){
+                Image(systemName: "iphone.gen1")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(.gray)
+                    .padding(.leading)
                 
-                HStack(spacing: 10){
-                    Image("mobile")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 20, height: 20)
-                        .foregroundColor(.black)
-                        .padding(.horizontal, 10)
-                    
-                    TextField("Enter Mobile Number", text: $number)
-                        .frame(width: .infinity)
-                    
-                    
-                    
-                    
-                }
-                .frame(height: 40)
-                .background(Color.white)
-                .border(Color.gray, width: 1)
+                
+                
+                TextField("Enter Mobile Number", text: $number)
+                    .padding(.vertical,14)
+                    .padding(.horizontal, 2)
                 
             }
+            .frame(maxWidth: .infinity, maxHeight: 45)
+            .background(
+                RoundedRectangle(cornerRadius: 6)
+                    .stroke(Color.gray.opacity(0.5), lineWidth: 1)
+            )
+            .background(.white)
+            .cornerRadius(6)
+            .multilineTextAlignment(.leading)
+            .padding(.bottom, 8)
+            .padding(.horizontal)
             
-            VStack{
+            HStack(spacing: 10){
+                Image(systemName: "envelope.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(.gray)
+                    .padding(.leading)
                 
-                HStack(spacing: 10){
-                    Image("mobile")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 20, height: 20)
-                        .foregroundColor(.black)
-                        .padding(.horizontal, 10)
-                    
-                    TextField("Enter Mobile Number", text: $number)
-                        .frame(width: .infinity)
-                    
-                    
-                    
-                    
-                }
-                .frame(height: 40)
-                .background(Color.white)
-                .border(Color.gray, width: 1)
+                
+                
+                TextField("Enter Email Id", text: $number)
+                    .padding(.vertical,14)
+                    .padding(.horizontal, 2)
                 
             }
+            .frame(maxWidth: .infinity, maxHeight: 45)
+            .background(
+                RoundedRectangle(cornerRadius: 6)
+                    .stroke(Color.gray.opacity(0.5), lineWidth: 1)
+            )
+            .background(.white)
+            .cornerRadius(6)
+            .multilineTextAlignment(.leading)
+            .padding(.bottom, 8)
+            .padding(.horizontal)
             
             
         }
         
         
-        
-        .padding(.horizontal, 10)
     }
 }
 
 
 struct IVIew: View {
     // Define an array of color options
-        let colors = ["Red", "Blue", "Green", "Yellow", "Purple"]
-        
-        @State private var selectedColor = "Red"
+    let colors = ["Red", "Blue", "Green", "Yellow", "Purple"]
+    
+    @State private var selectedColor = "Red"
     
     var body: some View {
         VStack {
@@ -197,5 +270,78 @@ struct IVIew: View {
             
         }
         .padding(.horizontal, 10)
+    }
+}
+
+struct  VerifyBtnView: View {
+    
+    @State private var isSheetPresented = false
+    
+    
+    var body: some View {
+        
+        //        NavigationLink(destination: Otp().navigationBarBackButtonHidden(true)) {
+        
+        Button{isSheetPresented.toggle()}
+        
+        
+    label: {
+        Text("VERIFY")
+            .textCase(.uppercase)
+            .fontWeight(.semibold)
+            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 45)
+            .frame(width: .infinity, height: 44)
+            .background(.orange)
+            .foregroundColor(.white)
+            .cornerRadius(6)
+        
+        .padding()    
+    }
+        
+        
+    .sheet(isPresented: $isSheetPresented){
+        SelectCity(isSheetPresented : $isSheetPresented)
+            .presentationDetents([.medium, .large])
+        
+    }
+        
+        
+    }
+}
+
+struct SelectbankView: View {
+    
+    var text : String = "Select bank"
+    
+    var body: some View {
+        HStack{
+            
+            
+            
+            Text(text)
+                .font(.system(size: 17))
+                .fontWeight(.regular)
+                .foregroundColor(.gray.opacity(0.6))
+                .padding(.leading)
+            
+            Spacer()
+            
+            Image(systemName: "chevron.down")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 16, height: 16)
+                .foregroundColor(.gray)
+                .padding(.trailing)
+            
+        }
+        .frame(maxWidth: .infinity, maxHeight: 45)
+        .background(
+            RoundedRectangle(cornerRadius: 6)
+                .stroke(Color.gray.opacity(0.5), lineWidth: 1)
+        )
+        .background(.white)
+        .cornerRadius(6)
+        .padding(.horizontal)
+        
     }
 }

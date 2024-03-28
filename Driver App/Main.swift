@@ -9,34 +9,59 @@ import SwiftUI
 
 struct Main: View {
     var body: some View {
-        ZStack {
-            Color(Color.blue).edgesIgnoringSafeArea(.top)
-           
+        NavigationView{
             
-            VStack {
-    
-           
-                  TopView()
-                    .background(.white)
-                    .cornerRadius(50)
+            
+            ZStack {
+                Color(Color.orange).edgesIgnoringSafeArea(.top)
+                
+                
+                VStack {
                     
+                    
+                    TopView()
+                        .background(.white)
+                        .cornerRadius(100, corners: [.bottomLeft, .bottomRight]) // Apply corner radius to bottom corners
+
+                    
+                    
+                    
+                    BottomView()
+                        
+                }
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 
                 
-                BottomView()
+                
+                
+                
+                
             }
-            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-
+            .background(.black)
+            .frame(width: .infinity, height: .infinity)
             
             
             
-
-           
         }
-        .background(.black)
-        .frame(width: .infinity, height: .infinity)
-        
-        
-        
+    }
+}
+
+
+
+struct RoundedCorner: Shape {
+
+    var radius: CGFloat = .infinity
+    var corners: UIRectCorner = .allCorners
+
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
+}
+
+extension View {
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape( RoundedCorner(radius: radius, corners: corners) )
     }
 }
 
@@ -45,32 +70,49 @@ struct Main: View {
 }
 
 struct BottomView: View {
+
+    
     var body: some View {
-        HStack{
+        
+        
+        HStack(alignment: .center, spacing: 10){
             
-            Text("SIGNUP")
-                .foregroundColor(.blue)
-                .frame(width: 120,height: 40)
-                .background(.white)
-                .cornerRadius(10)
+            NavigationLink(destination: WelcomeScreen().navigationBarBackButtonHidden(true)) {
+           
+                    Text("SIGNUP")
+                        .foregroundColor(.orange)
+                        .fontWeight(.semibold)
+                        .frame(width: 160,height: 45)
+                        .background(.white)
+                        .cornerRadius(6)
+                
+            }
             
             
             Spacer()
-            Text("LOGIN")
-                .frame(width: 120,height: 40)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.white, lineWidth: 4)
-                )
-                .foregroundColor(.white)
-                .cornerRadius(10)
+            
+            NavigationLink(destination: Login().navigationBarBackButtonHidden(true)) {
+                
+        
+                    Text("LOGIN")
+                        .frame(width: 160,height: 45)
+                        .fontWeight(.semibold)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 6)
+                                .stroke(Color.white, lineWidth: 3)
+                        )
+                        .cornerRadius(6)
+                        .foregroundColor(.white)
+                
+            }
+            
             
             
             
         }
         .frame(width: .infinity, height: 200)
-        .padding(.horizontal, 60)
-        .background(.blue)
+        .padding(.horizontal, 50)
+        .background(.orange)
     }
 }
 
@@ -80,8 +122,8 @@ struct TopView: View {
             
             Image("cab")
                 .resizable()
-                .frame(maxWidth: .infinity,maxHeight: 280)
                 .scaledToFit()
+                .frame(maxWidth: .infinity,maxHeight: 280)
                 .padding(.top, 80)
                 .padding()
 
@@ -89,14 +131,17 @@ struct TopView: View {
             Spacer()
             
             Text("Search for favorite \nMedics near you")
-                .font(.custom("Montserrat-Regular", size: 30))
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+//                .font(.custom("Montserrat-bold", size: 30))
+                .font(.system(size: 28))
+                .foregroundColor(.black)
+                .fontWeight(.semibold)
                 .padding(.bottom)
                 .multilineTextAlignment(.center)
             
             
             Text("Discover the foods from over \n3250 reataurants")
                 .font(.title3)
+                .foregroundColor(.black.opacity(0.6))
                 .lineSpacing(4)
                 .fontWeight(.light)
                 .multilineTextAlignment(.center)

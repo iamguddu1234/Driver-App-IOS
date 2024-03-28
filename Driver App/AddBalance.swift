@@ -49,10 +49,13 @@ struct AddBalance: View {
                     .padding(.horizontal, 2)
                 
             }
+            .frame(maxWidth: .infinity, maxHeight: 45)
             .background(
                 RoundedRectangle(cornerRadius: 6)
                     .stroke(Color.gray.opacity(0.5), lineWidth: 1)
             )
+            .background(.white)
+            .cornerRadius(6)
             .padding(.bottom, 6)
             .padding(.horizontal)
             .padding(.top)
@@ -64,9 +67,9 @@ struct AddBalance: View {
             
             Text("Add Money")
                 .textCase(.uppercase)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 44)
-                .background(.blue)
+                .fontWeight(.semibold)
+                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 45)
+                .background(.orange)
                 .foregroundColor(.white)
                 .cornerRadius(6)
             
@@ -89,10 +92,14 @@ struct TopBar1: View {
     var body: some View {
         HStack(alignment: .center){
             
-            Image(systemName: "arrow.backward")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 18, height: 18)
+            NavigationLink(destination: YourWallet().navigationBarBackButtonHidden(true)) {
+                
+                Image(systemName: "arrow.backward")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 18, height: 18)
+                    .foregroundColor(.black)
+            }
             
             Text("Add balance")
                 .font(.system(size: 18))
@@ -112,7 +119,7 @@ struct TopBar1: View {
             
         }
         .padding(.horizontal, 30)
-        .padding(.bottom, 20)
+        .padding(.vertical)
         .background(.white)
         .shadow(color: Color.gray.opacity(0.09), radius: 1 ,x: 0.0,y:3)
     }

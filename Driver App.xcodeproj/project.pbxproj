@@ -30,6 +30,24 @@
 		B20A4AD52BA0640700B8941D /* YourWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AD42BA0640700B8941D /* YourWallet.swift */; };
 		B20A4AD72BA0720300B8941D /* SubmitForApproval.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AD62BA0720300B8941D /* SubmitForApproval.swift */; };
 		B20A4AD92BA0778C00B8941D /* AddVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AD82BA0778C00B8941D /* AddVehicle.swift */; };
+		B20A4ADB2BA178D100B8941D /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4ADA2BA178D100B8941D /* WelcomeScreen.swift */; };
+		B20A4ADD2BA1B5BD00B8941D /* PartnerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4ADC2BA1B5BD00B8941D /* PartnerDetails.swift */; };
+		B20A4ADF2BA1C5A400B8941D /* VehicleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4ADE2BA1C5A400B8941D /* VehicleDetails.swift */; };
+		B20A4AE12BA1CAAA00B8941D /* BottomSheetViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AE02BA1CAAA00B8941D /* BottomSheetViewOne.swift */; };
+		B20A4AE32BA2CB1100B8941D /* BottomSheetViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AE22BA2CB1100B8941D /* BottomSheetViewTwo.swift */; };
+		B20A4AE52BA2D07D00B8941D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AE42BA2D07D00B8941D /* MapView.swift */; };
+		B20A4AE72BA2D67600B8941D /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AE62BA2D67600B8941D /* HomePageView.swift */; };
+		B20A4AE92BA3178000B8941D /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AE82BA3178000B8941D /* NavView.swift */; };
+		B20A4AEB2BA44CFC00B8941D /* SelectCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AEA2BA44CFC00B8941D /* SelectCity.swift */; };
+		B20A4AED2BA4512800B8941D /* SelectVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4AEC2BA4512800B8941D /* SelectVehicle.swift */; };
+		B22D7F152BA8562B004452BE /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D7F142BA8562B004452BE /* Login.swift */; };
+		B22D7F172BA8572C004452BE /* Otp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D7F162BA8572C004452BE /* Otp2.swift */; };
+		B22D7F192BA85999004452BE /* SelectBankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D7F182BA85999004452BE /* SelectBankView.swift */; };
+		B22D7F1B2BA9A727004452BE /* SelectVehicleCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D7F1A2BA9A727004452BE /* SelectVehicleCategory.swift */; };
+		B275F9022BAC00C800B20491 /* StartRide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275F9012BAC00C800B20491 /* StartRide.swift */; };
+		B275F9042BAC03B500B20491 /* EndRide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275F9032BAC03B500B20491 /* EndRide.swift */; };
+		B275F9062BAC05F600B20491 /* RIdeOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275F9052BAC05F600B20491 /* RIdeOTP.swift */; };
+		B275F9082BAC194200B20491 /* RateFinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275F9072BAC194200B20491 /* RateFinalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +102,24 @@
 		B20A4AD42BA0640700B8941D /* YourWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourWallet.swift; sourceTree = "<group>"; };
 		B20A4AD62BA0720300B8941D /* SubmitForApproval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitForApproval.swift; sourceTree = "<group>"; };
 		B20A4AD82BA0778C00B8941D /* AddVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicle.swift; sourceTree = "<group>"; };
+		B20A4ADA2BA178D100B8941D /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		B20A4ADC2BA1B5BD00B8941D /* PartnerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerDetails.swift; sourceTree = "<group>"; };
+		B20A4ADE2BA1C5A400B8941D /* VehicleDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetails.swift; sourceTree = "<group>"; };
+		B20A4AE02BA1CAAA00B8941D /* BottomSheetViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewOne.swift; sourceTree = "<group>"; };
+		B20A4AE22BA2CB1100B8941D /* BottomSheetViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewTwo.swift; sourceTree = "<group>"; };
+		B20A4AE42BA2D07D00B8941D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B20A4AE62BA2D67600B8941D /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		B20A4AE82BA3178000B8941D /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		B20A4AEA2BA44CFC00B8941D /* SelectCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCity.swift; sourceTree = "<group>"; };
+		B20A4AEC2BA4512800B8941D /* SelectVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVehicle.swift; sourceTree = "<group>"; };
+		B22D7F142BA8562B004452BE /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		B22D7F162BA8572C004452BE /* Otp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Otp2.swift; sourceTree = "<group>"; };
+		B22D7F182BA85999004452BE /* SelectBankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBankView.swift; sourceTree = "<group>"; };
+		B22D7F1A2BA9A727004452BE /* SelectVehicleCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVehicleCategory.swift; sourceTree = "<group>"; };
+		B275F9012BAC00C800B20491 /* StartRide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRide.swift; sourceTree = "<group>"; };
+		B275F9032BAC03B500B20491 /* EndRide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndRide.swift; sourceTree = "<group>"; };
+		B275F9052BAC05F600B20491 /* RIdeOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIdeOTP.swift; sourceTree = "<group>"; };
+		B275F9072BAC194200B20491 /* RateFinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateFinalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,18 +179,36 @@
 				B20A4ABA2B9CA96900B8941D /* Two.swift */,
 				B20A4ABC2B9CAEEF00B8941D /* Otp.swift */,
 				B20A4ABE2B9DDE3500B8941D /* Create_Profile.swift */,
+				B22D7F142BA8562B004452BE /* Login.swift */,
+				B22D7F162BA8572C004452BE /* Otp2.swift */,
+				B20A4ADA2BA178D100B8941D /* WelcomeScreen.swift */,
+				B20A4ADC2BA1B5BD00B8941D /* PartnerDetails.swift */,
+				B20A4ADE2BA1C5A400B8941D /* VehicleDetails.swift */,
+				B20A4AE02BA1CAAA00B8941D /* BottomSheetViewOne.swift */,
 				B20A4AC02B9EB2A200B8941D /* MyProfile.swift */,
 				B20A4AC42B9EF12A00B8941D /* CashCollected.swift */,
 				B20A4AC62B9F007700B8941D /* AddBalance.swift */,
 				B20A4AC82B9F05A300B8941D /* Transfer.swift */,
 				B20A4ACA2B9F071D00B8941D /* BillDetails.swift */,
+				B20A4AE22BA2CB1100B8941D /* BottomSheetViewTwo.swift */,
+				B275F9032BAC03B500B20491 /* EndRide.swift */,
+				B275F9072BAC194200B20491 /* RateFinalView.swift */,
+				B275F9052BAC05F600B20491 /* RIdeOTP.swift */,
+				B20A4AE42BA2D07D00B8941D /* MapView.swift */,
+				B275F9012BAC00C800B20491 /* StartRide.swift */,
+				B20A4AE62BA2D67600B8941D /* HomePageView.swift */,
+				B20A4AE82BA3178000B8941D /* NavView.swift */,
 				B20A4ACC2B9F4F8F00B8941D /* AddBankDetils.swift */,
 				B20A4ACE2B9F55C300B8941D /* YourTrip.swift */,
 				B20A4AD02B9F5AD100B8941D /* YourTripFullView.swift */,
 				B20A4AD22BA0578E00B8941D /* TransferFinal.swift */,
+				B22D7F182BA85999004452BE /* SelectBankView.swift */,
 				B20A4AD42BA0640700B8941D /* YourWallet.swift */,
 				B20A4AD62BA0720300B8941D /* SubmitForApproval.swift */,
 				B20A4AD82BA0778C00B8941D /* AddVehicle.swift */,
+				B20A4AEA2BA44CFC00B8941D /* SelectCity.swift */,
+				B20A4AEC2BA4512800B8941D /* SelectVehicle.swift */,
+				B22D7F1A2BA9A727004452BE /* SelectVehicleCategory.swift */,
 			);
 			path = "Driver App";
 			sourceTree = "<group>";
@@ -329,16 +383,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20A4ADB2BA178D100B8941D /* WelcomeScreen.swift in Sources */,
+				B20A4AE52BA2D07D00B8941D /* MapView.swift in Sources */,
+				B20A4AED2BA4512800B8941D /* SelectVehicle.swift in Sources */,
+				B22D7F152BA8562B004452BE /* Login.swift in Sources */,
+				B20A4ADD2BA1B5BD00B8941D /* PartnerDetails.swift in Sources */,
 				B20A4ABB2B9CA96A00B8941D /* Two.swift in Sources */,
+				B20A4AE72BA2D67600B8941D /* HomePageView.swift in Sources */,
+				B275F9082BAC194200B20491 /* RateFinalView.swift in Sources */,
+				B20A4ADF2BA1C5A400B8941D /* VehicleDetails.swift in Sources */,
+				B22D7F172BA8572C004452BE /* Otp2.swift in Sources */,
 				B20A4AC12B9EB2A200B8941D /* MyProfile.swift in Sources */,
+				B22D7F192BA85999004452BE /* SelectBankView.swift in Sources */,
 				B20A4AC32B9EE3F000B8941D /* Myprofile2.swift in Sources */,
+				B20A4AE32BA2CB1100B8941D /* BottomSheetViewTwo.swift in Sources */,
 				B20A4AD52BA0640700B8941D /* YourWallet.swift in Sources */,
 				B20A4AB02B9C58CB00B8941D /* Main.swift in Sources */,
 				B20A4ACD2B9F4F8F00B8941D /* AddBankDetils.swift in Sources */,
 				B20A4AC52B9EF12A00B8941D /* CashCollected.swift in Sources */,
+				B20A4AE12BA1CAAA00B8941D /* BottomSheetViewOne.swift in Sources */,
 				B20A4ABF2B9DDE3500B8941D /* Create_Profile.swift in Sources */,
 				B20A4AC92B9F05A300B8941D /* Transfer.swift in Sources */,
+				B22D7F1B2BA9A727004452BE /* SelectVehicleCategory.swift in Sources */,
+				B275F9042BAC03B500B20491 /* EndRide.swift in Sources */,
+				B275F9062BAC05F600B20491 /* RIdeOTP.swift in Sources */,
+				B20A4AEB2BA44CFC00B8941D /* SelectCity.swift in Sources */,
+				B20A4AE92BA3178000B8941D /* NavView.swift in Sources */,
 				B20A4A862B9C58B600B8941D /* Driver_AppApp.swift in Sources */,
+				B275F9022BAC00C800B20491 /* StartRide.swift in Sources */,
 				B20A4AD72BA0720300B8941D /* SubmitForApproval.swift in Sources */,
 				B20A4AD12B9F5AD100B8941D /* YourTripFullView.swift in Sources */,
 				B20A4ACB2B9F071D00B8941D /* BillDetails.swift in Sources */,
@@ -507,11 +579,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Driver App/Preview Content\"";
+				DEVELOPMENT_TEAM = A5HC2D4NZ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -524,6 +599,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "demo.Driver-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,11 +611,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Driver App/Preview Content\"";
+				DEVELOPMENT_TEAM = A5HC2D4NZ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,6 +631,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "demo.Driver-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -565,6 +645,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A5HC2D4NZ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -584,6 +665,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A5HC2D4NZ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -600,13 +682,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Driver-AppUITests-Info.plist";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "demo.Driver-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -618,13 +704,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Driver-AppUITests-Info.plist";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "demo.Driver-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
